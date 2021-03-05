@@ -42,6 +42,12 @@ public:
     {
         cout << "Storona a = " << a << "\nStorona b = " << b << "\nStorona c = " << c << endl << endl;
     }
+
+    bool operator == (triangle &abc)
+    {
+
+        return (a==abc.a)&&(b==abc.b)&&(c==abc.c);
+    }
 };
 
 
