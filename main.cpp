@@ -8,22 +8,23 @@ class triangle
 {
 public:
 
-	double a, b, c, p, s, rv, rop;
+	double a, b, c;
 
 
     void Square()
     {
-        p = (a + b + c)/2;
-        s = sqrt( p * (p-a) * (p-b) * (p-c) );
+       double p = (a + b + c)/2;
+       double s = sqrt( p * (p-a) * (p-b) * (p-c) );
 
         cout << "Ploshad s = " << s << endl << endl;
     }
 
     void Radius()
     {
-        rop = (a*b*c)/(4*s);
 
-        rv = s/p;
+       double rop = (a*b*c)/(4*s);
+
+       double rv = s/p;
 
         cout << "Opisanniy radius rop = " << rop << "\nVpisanniy radius rv = " << rv << endl << endl;
     }
